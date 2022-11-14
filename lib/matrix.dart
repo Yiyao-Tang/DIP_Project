@@ -220,7 +220,7 @@ class _SecondScreenState extends State<SecondScreen>
 
   List<String> matrixValues = [];
   List<num> stringToDouble = [];
-  List<num> chunksToDouble = [];
+  List<double> chunksToDouble = [];
 
   List<DropdownMenuItem<String>> get dropdownItems {
     List<DropdownMenuItem<String>> menuItems = [
@@ -247,6 +247,7 @@ class _SecondScreenState extends State<SecondScreen>
         columns: int.parse(widget.columnNumber),
         rows: int.parse(widget.rowNumber),
         data: [matrixDet]);
+    print('matrix det is $matrixA');
     return matrixA;
   }
 
@@ -264,6 +265,8 @@ class _SecondScreenState extends State<SecondScreen>
         outputMatrix = outputMatrix.replaceAll('2d', '');
         outputMatrix = outputMatrix.replaceAll('(', '');
         outputMatrix = outputMatrix.replaceAll(')', '');
+        outputMatrix = outputMatrix.substring(1);
+        outputMatrix = outputMatrix.substring(0, outputMatrix.length - 1);
       });
       matrixValues = [];
       // stringToDouble.clear();
@@ -275,9 +278,9 @@ class _SecondScreenState extends State<SecondScreen>
             content: Text(
                 'Determinants must be a Square Matrix, i.e 2x2, 3x3, etc')));
       } else if (dropdownvalue == 'det' &&
-          widget.columnNumber != widget.rowNumber) {
-        List<double> matrixDet = List<double>.from(chunksToDouble);
-        print('the determinant is ${matrixDeterminants(matrixDet)}');
+          widget.columnNumber == widget.rowNumber) {
+        List<double> matrixDet = chunksToDouble;
+        print('the determinant is ${matrixDeterminants(chunksToDouble)}');
       }
     }
   }
