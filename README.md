@@ -4,7 +4,7 @@
 
 Our team will use the Flutter framework in Visual Studio Code to create a scientific calculator app. Our calculator will help students with arithmetic problems in ways that are unique among calculator apps by drawing inspiration from three distinct calculator apps. Mathematical operations, equation solving, matrix computations, unit conversion, graph plotting, differentiation, and integration are all available on our calculator. The main advantage of our calculator above others on the market is its ability to follow verbal instructions. The app's user interface (UI) may be altered to suit individual needs. This is done so that the experience may be tailored to the individual. Easily switch between English and other languages using our calculator, so the user may enter their desired language into the calculator.
 
-Beginning in August 2022, the previously stated characteristics must be completed within 11 weeks. During the period, our team has completed the majority of the project's essential components. Unfortunately, owing to scheduling constraints, handwriting recognition is not currently being integrated in our software. This is due to the library's immaturity, as a consequence of which a significant portion of its codes are not yet finalized.
+
 
 # Scope
 
@@ -12,7 +12,6 @@ Beginning in August 2022, the previously stated characteristics must be complete
 
 The group started the project by listing the functions and features that they want to show in the calculator. (Referring to Appendix C) Moreover, a Figma design was created to give the group a head starts for the front-end group to create the calculator. The design will vary throughout the journey of creating the calculator to best suit the user's experience with the calculator.
 
-Initially, a splash screen was developed (Appendix E), but due to our aim of providing the user with a Simple, Direct, Efficient Calculator, it was then decided not to add that in as this might not be as direct as compared to the user heading to the homepage right away.
 
 ## Functions
 
@@ -22,12 +21,6 @@ Due to file size and page limitations, some of the application screenshots, vide
 
 Arithmetic is the discipline of mathematics in which the study of numbers via the application of different operations. The fundamental mathematical operations are addition, subtraction, multiplication, and division.
 
-| Symbols | Name            | Explanation                                                                                                                                    | Example                                                                                                                   |
-|---------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-|        |  Addition       | Sum of two or more numbers, the answer would be greater than the initial numbers.                                                              |  5 + 5 = 10                                                                                                               |
-|        |  Subtraction    | "Taking a number away," and the answer would be less than the initial numbers.                                                                 |  8 – 2 = 6                                                                                                                |
-|        |  Multiplication |  Add the initial number repeatedly to the given number of times.                                                                               | 3  2 = 6 Initial: 3; Given: 2 ( adding 3, 2 times, 3+3 =6)                                                               |
-|        |   Division      | subtraction of the given numbers from the initial number repeatedly. The answer is the number of times subtraction occurs till it reaches ‘0’. | 8  2 = 4 Initial: 8; Given: 2 (Hence, subtracting 2 from 8 till it reaches ‘0’,  8 – 2 – 2 – 2 – 2 = 0, the answer is 4) |
 
 ### Unit Conversion
 
@@ -35,9 +28,8 @@ Unit conversion is a multi-step procedure that includes rounding, selecting the 
 
 For Example:
 
-| Celsius | Fahrenheit | Kelvin  |
-|---------|------------|---------|
-| 30C    | 86****F   | 303.15K |
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/3e5f8167-ce86-4630-8739-85fcd8897d25">
+
 
 ### Equation Solver
 
@@ -45,40 +37,33 @@ For Example:
 
 An expression consisting of variables, coefficients, and exponents is a polynomial equation. A polynomial function is one whose independent variable is singular. A polynomial equation may only have exponents in the form of positive integers; any negative integer exponent disqualifies it as a polynomial equation.
 
-| Polynomial Equation                                                                                                                                                                                                                                                                                                                    | Example                     |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| $$ \mathbf{F} \left( \mathbf{x} \right) \mathbf{=} \mathbf{a}_{\mathbf{n}} \mathbf{x}^{\mathbf{n}} \mathbf{+} \mathbf{a}_{\mathbf{n - 1}} \mathbf{x}^{\mathbf{n - 1}} \mathbf{+} \mathbf{a}_{\mathbf{n - 2}} \mathbf{x}^{\mathbf{n - 2}} \mathbf{+ . . +} \mathbf{a}_{\mathbf{1}} \mathbf{x +} \mathbf{a}_{\mathbf{1}} \mathbf{= 0} $$ | $$ 5 x^{2} + 2 x - 1 = 0 $$ |
+<img width="772" alt="image" src="https://github.com/user-attachments/assets/65eb9b95-1164-455c-b735-7f5181104840">
+
 
 #### Simultaneous
 
 Two or more algebraic equations with the same unknown variables satisfy all simultaneous equations. This suggests that the simultaneous equations share a solution [5].
 
-| Simultaneous Equation                                      | Example                                                                                                                                                                                                           |
-|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  $$ \mathbf{a x + b y = 1} $$ $$ \mathbf{c x - d y = 0} $$ | $$2 x + 4 y = 1 0$$ --- (1) \| $$x + y = 0$$ --- (2) (2): $$x = - y$$ --- (3) Sub (3) into (1): 2$$y = 1 0 , \  \therefore y = 5$$ ---(4) \| Sub (4) into (3): $$x = - 5$$ $$ \therefore y = 5 \  ; x = \  - 5 $$ |
+
+<img width="773" alt="image" src="https://github.com/user-attachments/assets/59bb978a-9f18-4392-ae3c-76b832557e55">
 
 ### Matrix
 
 **Matrix** is a rectangular arrangement of numbers into rows and columns.
+<img width="778" alt="image" src="https://github.com/user-attachments/assets/c54cb778-824f-4753-8fc8-036850b8a18d">
 
-| Symbols                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Matrix          | Explanation                                                                                                                                     | Example                                                                                                                                                                                                              |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  $$ \begin{bmatrix}\mathbf{x} & \mathbf{\cdots} & \mathbf{y} \\ \mathbf{\vdots} & \mathbf{\ddots} & \mathbf{\vdots} \\ \mathbf{w} & \mathbf{\cdots} & \mathbf{z}\end{bmatrix} $$ $$ \mathbf{M a t r i x = R o w s \  \times \  C o l u m n s} $$                                                                                                                                                                                                                                                      |   **Dimension** |  Tells the size, number of rows and columns, of matrix.                                                                                         | $$ \left\lbrack \begin{matrix}a \\ b \\ c\end{matrix} \begin{matrix}d \\ e \\ f\end{matrix} \right\rbrack $$ Number of Rows: 3 Number of Columns: 2                                                                  |
-| $$ \mathbf{A = \ } \begin{bmatrix}\mathbf{x} & \mathbf{\cdots} & \mathbf{y} \\ \mathbf{\vdots} & \mathbf{\ddots} & \mathbf{\vdots} \\ \mathbf{w} & \mathbf{\cdots} & \mathbf{z}\end{bmatrix} $$ $$ \mathbf{A = \ } \mathbf{i}^{\mathbf{t h \ }} \mathbf{r o w s \  \times \ } \mathbf{j}^{\mathbf{t h}} \mathbf{\  c o l u m n s} $$ Presented in: $$ \mathbf{A}_{\mathbf{i}^{\mathbf{j}}} \mathbf{\  o r \  \ } \mathbf{A}_{\mathbf{i , j}} \mathbf{\  o r \ } \mathbf{( i , j )}^{\mathbf{t h}} $$  |   **Elements**  | Tells the entries of matrix can be either numbers, variables, or any other mathematical expression. It also tells the position of the elements. | $$ A = \  \begin{bmatrix}a & b & 3 \\ d & 1 & f \\ g & 5 & i\end{bmatrix} $$ $$ E l e m e n t s \  o f \  A = a , \  b , \  3 , \  d , \  1 , \  f , \  g , \  5 , \  i $$  $${P o s i t i o n : \  A}_{2 , 3} = f$$ |
 
 ### Calculus
 
 #### Differentiation
 
-| Differentiation                          | Explanation                                              | Algebraic Functions                                                                                                                                                                       | Example                                            |
-|------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-|  $$ \frac{\mathbf{d y}}{\mathbf{d x}} $$ |  Rate of change for one quantity with respect to another | $$ ( 1 ) \  \frac{d}{d x} ( c ) = 0 \ w h e r e \  c \  i s \  c o n s t a n t $$ $$ ( 2 ) \  \frac{d}{d x} \left( x^{n} \right) = n x^{n - 1}w h e r e \  n \  i s \  c o n s t a n t $$ | $$ y = x^{2}\frac{d y}{d x} = 2 x^{2 - 1} = 2 x $$ |
+<img width="778" alt="image" src="https://github.com/user-attachments/assets/ef964c77-593e-4c9a-bef5-e65512b3ba66">
+
+
 
 #### Integration
+<img width="778" alt="image" src="https://github.com/user-attachments/assets/b670ed80-5b8a-4aed-a5e2-6929a1ad5cee">
 
-| Integration                                                                             | Explanation                                                                          | Algebraic Functions                                                                                                                                                                                                                                                                                                   | Example                                                                                                                                |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|    $$ \int_{}^{} {\mathbf{f}^{\mathbf{'}} \left( \mathbf{x} \right) \mathbf{\  d x}} $$ |   Process of finding anti-derivatives Finding: area, volume, central point and more. | $$ ( 1 ) \  \int_{}^{} a \  d x = a x + c( 2 ) \  \int_{}^{} \begin{aligned}x^{n} \  d x = \  \frac{x^{n + 1}}{n + 1} + c \  \\ w h e n \  n \neq \  - 1\end{aligned} $$ $$ ( 3 ) \  \int_{}^{} \frac{1}{x} \  d x = \  \ln | x | + c( 4 ) \int_{}^{} {\ln {x \  d x = x \ln x - x + c \  , \  \  f o r \  x > 0}} $$ | $$ \int_{}^{} {x^{5} \  d x = \ } \frac{x^{5 + 1}}{5 + 1} + c $$ $$ \  \  \  \  \  \  \  \  \  \  \  \  \  \  = \frac{x^{6}}{6} + c $$ |
 
 ### Graph Plotting
 
@@ -86,13 +71,9 @@ Plotting a graph in would require 2 variables in a function to see what relation
 
 Drawing the graph of the corresponding function, where each point meets the function equation, is a necessary step in the process of graphing functions. Usually, the first variable acts as an independent variable, represented by the letters x along the x-axis, while the second variable is the dependent variable, represented by the letter y or f(x) along the y-axis. An example shown below when we define a function f(x) = 2x+1.
 
-![](7fa37166f3db03df73e6a37439049ac7.png)
-
-Figure 4 Graphical representation of a function
+<img width="167" alt="image" src="https://github.com/user-attachments/assets/66ec2e5d-57da-44fd-8645-93cabc3da03d">
 
 ### Keyboard
-
-It is impossible to input data into a calculator without the keyboard. As the objective of the project is to develop a scientific calculator, the keyboard must have more complex arithmetic operations than a conventional calculator. Considering the functions, we want our calculator to accomplish in addition to those available on the market, we designed a keyboard that is well matched.
 
 The keyboard system consists of three sub-keyboards: Basic Keyboard, Expanded Keyboard, Constant Keyboard.
 
@@ -701,28 +682,17 @@ Besides that, as a team, we learnt to listen to each other's ideas and collabora
 
 # Appendix A – Project Members Information
 
-|   | Name                     | Project contributions                                               | Report Contribution                                              |
-|---|--------------------------|---------------------------------------------------------------------|------------------------------------------------------------------|
-| 1 | Tang Yiyao               | Group Leader, Homepage, Keyboard, Settings, Calcbot, Database       | Chapter 3.2.7, 3.2.10, 3.2.11,4.1, 4.2.2, 4.2.8 - 4.2.10         |
-| 2 | Muhammad Qais Bin Hasman | Setting, Frontend Design                                            | Chapter 3.2.6, 3.4, 3.5,8                                        |
-| 3 | Chen Xuan                | Unit Conversion, Constant Table, UI, Frontend Design, Splash Screen | Chapter 3.1, 3.2.1-3.2.5, 3.2.9, 3.3, 6,8 Coordination of Report |
-| 4 | Chua Cheng Jun Derek     | Keyboard, UI, Frontend Design                                       | Chapter 1, 2, 3.2.7, 4.2.1, 7                                    |
-| 5 | Theodore Tan Sheng Wei   | Unit Conversion, Matrix, Frontend Design                            | Chapter 4.2.3, 4.2.5                                             |
-| 6 | Wong Jun Bo              | Unit Conversion, Matrix, Backend Design                             | Chapter 1, 2, 4.2.4, 4.2.6                                       |
-| 7 | Tan Jun Aun              | Basic Calculation, Calculus, Complex Number, Partial Fraction       | Chapter 4.2.1, 4.2.1.11 4.2.11, 4.2.12                           |
-| 8 | Zhang Zongxian           | Graph Plotting, Backend Design                                      | Chapter 4.2.7, 5                                                 |
+|   | Name                     | Project contributions                                               | 
+|---|--------------------------|---------------------------------------------------------------------|
+| 1 | Tang Yiyao               | Group Leader, Homepage, Keyboard, Settings, Calcbot, Database       | 
+| 2 | Muhammad Qais Bin Hasman | Setting, Frontend Design                                            |           
+| 3 | Chen Xuan                | Unit Conversion, Constant Table, UI, Frontend Design, Splash Screen | 
+| 4 | Chua Cheng Jun Derek     | Keyboard, UI, Frontend Design                                       | 
+| 5 | Theodore Tan Sheng Wei   | Unit Conversion, Matrix, Frontend Design                            | 
+| 6 | Wong Jun Bo              | Unit Conversion, Matrix, Backend Design                             | 
+| 7 | Tan Jun Aun              | Basic Calculation, Calculus, Complex Number, Partial Fraction       |    
+| 8 | Zhang Zongxian           | Graph Plotting, Backend Design                                      |                                             |
 
-# Appendix B – Subgroup Member and Scope
-
-| **A: UI/UX and Testing** | **B: Front-End** | **C: Back-end** |
-|--------------------------|------------------|-----------------|
-| Chen Xuan                | Yiyao            | Theodore        |
-|                          | Chen Xuan        | Zong Xian       |
-|                          | Derek            | Jun Bo          |
-|                          | Qais             | Jun Aun         |
-|                          | Jun Aun          |                 |
-
-Scope![Graphical user interface, text, application, email Description automatically generated](178461ac80db3919aa90f85e6467475b.png)
 
 # Appendix C – Brainstorming of Function and Features
 
